@@ -12,6 +12,7 @@ app.use(cookieparser());
 const chats=require("./routes/chatsRoutes");
 const user=require("./routes/userRoutes");
 
+
 app.use("/api/v1",chats);
 app.use("/api/v1",user)
 
