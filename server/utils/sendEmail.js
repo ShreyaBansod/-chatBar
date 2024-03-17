@@ -1,7 +1,7 @@
 const nodeMailer=require("nodemailer");
 const imaps = require('imap-simple');
 const { convert } = require('html-to-text');
-const { READ_MAIL_CONFIG } = require('../config/config');
+// const { READ_MAIL_CONFIG } = require('../config/config');
 const { simpleParser } = require('mailparser');
 const fs = require('fs');
 const path = require('path');
