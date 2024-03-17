@@ -20,7 +20,7 @@ const getChats=asyncHandler(async(req,res)=>{
 
 const ScheduleAppointment=asyncHandler(async(req,res)=>{
   const { date, time, description } = req.body;
-  console.log(typeof(req.body.date))
+//  console.log(typeof(req.body.date))
   const appointment=await appointmentModel.create({
     user_id:req.user.id,
     date: date,
@@ -37,10 +37,11 @@ const ScheduleAppointment=asyncHandler(async(req,res)=>{
 
 
 const RaiseComplain=asyncHandler(async(req,res)=>{
+  const { dept,description} = req.body;
   const complain=await complainModel.create({
     user_id:req.user.id,
-    dept:req.dept,
-    description:req.description
+    dept:dept,
+    description:description
   });
   await complain.save();
   res.status(201).json({
