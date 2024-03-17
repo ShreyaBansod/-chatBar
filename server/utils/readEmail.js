@@ -7,8 +7,8 @@ const conversationModel = require('../models/conversationModel');
 const Message=require("../models/messages")
 
 const imapConfig = {
-  user: 'mihir.waba@gmail.com',
-  password: 'dxczsbgiwcrynoir',
+  user: process.env.EMAIL_HOST,
+  password: process.env.EMAIL_PASSWORD,
   host: 'imap.gmail.com',
   port: 993,
   tls: true,

@@ -22,14 +22,14 @@ const sendEmail=async(options)=>{
         host:'smtp.gmail.com',
         port:587,
         auth:{
-            user:'mihir.waba@gmail.com',
-            pass: 'dxczsbgiwcrynoir'
+            user:process.env.EMAIL_HOST,
+            pass: process.env.EMAIL_PASSWORD
         }
 
     });
 
     const mailOptions={
-        from:"mihir.waba@gmail.com",
+        from:process.env.EMAIL_HOST,
         to:options.email,
         subject:options.subject,
         text:options.message,
