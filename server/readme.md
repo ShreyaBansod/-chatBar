@@ -61,7 +61,7 @@ as json ***post*** request
 
 ### Run Socket io
 
- Open http://localhost:4000/chat on socket.io in postman and ask the bot any question you want!!Make sure to listen event on tcp_messages.All the conversations between the bot and user are saved in the db.
+ Open http://localhost:4000/chat on socket.io in postman and ask the bot any question you want!!Make sure to listen event on tcp_messages.All the conversations between the bot and user are saved in db.
  
  ```bash
      message:what if i want to schedule an appointment
