@@ -20,7 +20,7 @@
     "imap": "^0.8.19",
     "imap-simple": "^5.1.0",
     "jsonwebtoken": "^9.0.2",
-    "lodash-contrib": "^4.1200.1",
+    "lodash-contrib": "^241.2.1",
     "mailparser": "^3.6.9",
     "mongoose": "^7.6.3",
     "net": "^1.0.2",
